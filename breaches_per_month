@@ -1,1 +1,18 @@
 #!/usr/bin/env bash
+
+# CITS4407 - Open Source Tools and Scripting
+# Authorship: Kyle Leung (23601964), Sem 1 2023, The University of Western Australia
+
+# This program performs data analysis on a cleaned data file.
+
+# Compute the total number of incidents per month for each of the months
+tail -n +2 $1 | cut -f6 | sort | uniq -c | sort -k2 -n >file
+
+gawk -f data_analysis.awk file
+
+gawk -f table.awk table
+
+echo
+cat table
+
+# rm file table

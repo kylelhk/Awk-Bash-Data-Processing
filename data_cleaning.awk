@@ -3,7 +3,7 @@
 # CITS4407 - Open Source Tools and Scripting
 # Authorship: Kyle Leung (23601964), Sem 1 2023, The University of Western Australia
 
-# This program performs data cleaning on an input data file.
+# This is a Gawk script to be called by the top level script "preprocess" for performing data cleaning on an input data file.
 
 # Assumptions for the input tsv file:
 # - The 1st row is always the header.

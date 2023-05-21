@@ -1,1 +1,8 @@
 #!/usr/bin/env bash
+
+# CITS4407 - Open Source Tools and Scripting
+# Authorship: Kyle Leung (23601964), Sem 1 2023, The University of Western Australia
+
+# This program performs data cleaning on an input data file.
+
+gawk -f data_cleaning.awk $1
